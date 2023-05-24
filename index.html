@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="text">
+            <h1>FICOU COM DÚVIDA?<br>NOS MANDE UMA MENSAGEM!</h1>
+            <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <form class="formulario" id="formulario">
+
+            <div class="form-control">
+                <input type="text" class="obrigatorio" id="nome" style="padding: 8px;" placeholder="Nome completo *">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="email" class="obrigatorio" id="email" style="padding: 8px;" placeholder="Email *">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="tel" class="obrigatorio" id="telefone" style="padding: 8px;" placeholder="Telefone *">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <textarea id="mensagem" class="obrigatorio" style="padding: 8px;" placeholder=" Mensagem *"></textarea>
+                <small>Error Message</small>
+                <br>
+                <p>*campos obrigatórios</p>
+            </div>
+
+            <button id="btn-enviar" type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+
+    <script src="src/Js/index.js"></script>
+</body>
+</html>

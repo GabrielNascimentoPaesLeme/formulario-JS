@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-size: contain;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.text{
+    max-width: 50vw;
+}
+
+.text h1{
+    font-size: 20px;
+    font-weight: 900;
+    width: 400px;
+    color: white;
+}
+
+.text p{
+    width: 450px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.formulario{
+    background-color: white;
+    width: 340px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 20px;
+}
+
+input{
+    width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: block;
+}
+
+#mensagem{
+    width: 298px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: block;
+}
+
+#mensagem::placeholder {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    padding: 4px;
+}
+
+
+.formulario p{
+    font-size: 15px;
+}
+
+#btn-enviar{
+    background-color: #3ccc87;
+    color: white;
+    width: 298px;
+    height: 35px;
+    border: none;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+.form-control{
+    position: relative;
+}
+
+
+.form-control.sucesso input {
+    border: 2px solid #3ccc87;
+}
+
+
+.form-control.erro input {
+    border: 2px solid red;
+}
+
+.form-control.erro #mensagem {
+    border: 2px solid red;
+}
+
+.form-control.sucesso #mensagem {
+    border: 2px solid #3ccc87;
+}
+
+
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    
+}
+
+.form-control.erro small{
+    color: #DB5A5A;
+    visibility: visible;
+}
